@@ -1,0 +1,32 @@
+.body{
+    font-size: 10px;
+    
+    margin-left: 20px;
+
+}
+.body h1{
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+.body p{
+    font-size: 24px;
+    
+}
+.body p input{
+    font-size: 24px;
+    
+}
+.body button{
+    margin-left: 230px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(78, 182, 78);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    
+}
+.body button:hover{
+    background-color: rgb(52, 202, 52);
+}

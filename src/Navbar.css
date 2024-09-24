@@ -1,0 +1,69 @@
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-logo a{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    position: relative; /* ต้องการตำแหน่งที่สัมพันธ์กันเพื่อให้เมนูดรอปดาวน์ทำงาน */
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links a:hover {
+    color: #ddd;
+}
+
+/* Styles for dropdown root */
+.dropdown-root, .dropdown-linear, .dropdown-interpolation{
+    display: none;
+    position: absolute;
+    top: 100%; /* ปรากฏด้านล่างของรายการหลัก */
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    list-style: none;
+    min-width: 200px; /* กำหนดความกว้างของเมนู */
+}
+
+.dropdown-root li, .dropdown-linear li, .dropdown-interpolation li{
+    padding: 10px;
+}
+
+.dropdown-root a, .dropdown-linear a, .dropdown-interpolation a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-root a:hover, .dropdown-linear a:hover, .dropdown-interpolation a:hover{
+    background-color: #555;
+}
+
+/* Display dropdown menu when hovering */
+.dropdown:hover .dropdown-root,
+.dropdown:hover .dropdown-linear,
+.dropdown:hover .dropdown-interpolation {
+    display: block;
+}
